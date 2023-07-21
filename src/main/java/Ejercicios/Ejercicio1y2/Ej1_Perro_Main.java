@@ -1,4 +1,4 @@
-package Ejercicios.Ejercicio1;
+package Ejercicios.Ejercicio1y2;
 
 public class Ej1_Perro_Main {
     public static void main(String[] args) {
