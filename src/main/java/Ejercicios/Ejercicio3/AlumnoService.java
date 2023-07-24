@@ -51,13 +51,11 @@ public class AlumnoService {
     public void buscarAlumno(){
         System.out.println("Ingrese el nombre del alumno a buscar:");
         String name = read.next();
-        Iterator<Alumno> itAlumno = listaAlumnos.iterator();
-        while (itAlumno.hasNext()){
-            Alumno alumno = itAlumno.next();
-            if (alumno.getNombre().equals(name)){
+        for (Alumno alumno : listaAlumnos) {
+            if (alumno.getNombre().equals(name)) {
                 notaFinal(alumno);
                 break;
-            }else{
+            } else {
                 System.out.println("El alumno no se encuentra en la lista.");
             }
         }
