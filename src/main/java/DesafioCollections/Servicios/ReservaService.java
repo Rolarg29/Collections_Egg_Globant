@@ -17,6 +17,7 @@ public class ReservaService {
     public void crearReserva(){
         System.out.println("Ingrese la cantidad de personas.");
         Integer cantidadPersonas = read.nextInt();
+        //crearPersonas(cantidad
         switch (cantidadPersonas) {
             case 1 -> System.out.println("Puede escoger habitación de la 9-10");
             case 2 -> System.out.println("Puede escoger habitación de la 1-5");
