@@ -21,11 +21,21 @@ public class AppTienda {
 
     private void ejecutarAcciones(int option){
         switch (option) {
-            case 1 -> TS.agregarProducto();
-            case 2 -> TS.modificarPrecio();
-            case 3 -> TS.mostrarProductos();
-            case 4 -> TS.eliminarProductos();
-            case 5 -> System.out.println("Gracias...Vuelva Pronto!!!");
+            case 1:
+                TS.agregarProducto();
+                break;
+            case 2:
+                TS.modificarPrecio();
+                break;
+            case 3:
+                TS.mostrarProductos();
+                break;
+            case 4:
+                TS.eliminarProductos();
+                break;
+            case 5:
+                System.out.println("Gracias...Vuelva Pronto!!!");
+                break;
         }
     }
 

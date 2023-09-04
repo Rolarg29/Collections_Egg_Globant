@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
+import static Desafios.Desafio_3.Servicios.CommonServices.comprobarInt;
+
 public class PerroService {
     ArrayList<String> razasPerro = new ArrayList<>();
     Scanner read = new Scanner(System.in).useDelimiter("\n");
@@ -65,13 +67,5 @@ public class PerroService {
         razasPerro.remove(raza);
     }
 
-    private int comprobarInt() {
-        System.out.print("> ");
-        while (!read.hasNextInt()) {
-            read.next();
-            System.err.println("Tipo de dato incorrecto. Intentalo nuevamente.");
-            System.err.print("> ");
-        }
-        return read.nextInt();
-    }
+
 }

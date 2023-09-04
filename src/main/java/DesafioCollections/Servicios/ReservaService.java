@@ -19,9 +19,15 @@ public class ReservaService {
         Integer cantidadPersonas = read.nextInt();
         //crearPersonas(cantidad
         switch (cantidadPersonas) {
-            case 1 -> System.out.println("Puede escoger habitación de la 9-10");
-            case 2 -> System.out.println("Puede escoger habitación de la 1-5");
-            case 3 -> System.out.println("Puede escoger habitación de la 6-8");
+            case 1:
+                System.out.println("Puede escoger habitación de la 9-10");
+                break;
+            case 2:
+                System.out.println("Puede escoger habitación de la 1-5");
+                break;
+            case 3:
+                System.out.println("Puede escoger habitación de la 6-8");
+                break;
         }
         boolean disponible = false;
         Integer habitacion;
